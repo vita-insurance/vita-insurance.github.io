@@ -46,23 +46,29 @@ header {
     padding: 0 0.5rem;
     list-style: none;
     padding-right: 0.5rem;
+    z-index: 999;
 }
 
-.links{
+.links {
     align-items: center;
 }
-.links::before, .links::after{
+
+.links::before,
+.links::after {
     content: '';
     display: table;
 }
-.links::after{
+
+.links::after {
     clear: both;
 }
-.links li{
+
+.links li {
     float: left;
     position: relative;
 }
-.links a{
+
+.links a {
     font-size: 17px;
     font-weight: 100;
     font-family: 'Poppins', sans-serif;
@@ -73,13 +79,15 @@ header {
     text-decoration: none;
     color: #001F3F;
 }
-.links li:hover > a{
+
+.links li:hover>a {
     color: #001F3F;
     font-weight: 300;
     background: rgba(228, 228, 228, 0.795);
     border-radius: 15px;
 }
-.links ul{
+
+.links ul {
     margin: 20px 0 0 0;
     opacity: 0;
     visibility: hidden;
@@ -92,36 +100,43 @@ header {
     border-radius: 15px;
     transition: all .3s ease-in-out;
 }
-.links li:hover > ul{
+
+.links li:hover>ul {
     opacity: 1;
     visibility: visible;
     margin: 0;
 }
-.navbar-center .logo{
+
+.navbar-center .logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.navbar-center .logo img{
+
+.navbar-center .logo img {
     width: 60px;
     height: 60px;
 }
-.navbar-center .logo a{
+
+.navbar-center .logo a {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 800;
 }
-.navbar-right{
+
+.navbar-right {
     display: flex;
     align-items: center;
     text-align: center;
 
-    margin-left: 150px;
+    margin-left: 190px;
 }
-.navbar-right #mi_cuenta{
+
+.navbar-right #mi_cuenta {
     display: flex;
     padding-right: 30px;
 }
+
 .navbar-right .toggle-btn {
     color: #FFFFFF;
     font-size: 18px;
@@ -523,12 +538,20 @@ header {
 .social-links {
     display: flex;
     flex-direction: column;
+    padding-left: 25px;
 }
 
 .social-links a {
     margin-bottom: 10px;
     font-size: 14px;
     margin-left: 10px;
+}
+#social-links-contacts{
+    padding-bottom: 10px;
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 .footer-container-map-items{
     border-top-left-radius: 15px;

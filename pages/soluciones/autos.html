@@ -4,56 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Vita Soluciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/pages-css/autos-styles.css">
+    <title>Vita Autos</title>
 </head>
 <body>
     <header>
         <div class="navbar">
             <ul class="links">
-                <li><a>
-                        <p id="navbar-links-soluciones">Soluciones</p>
-                        <div class="dropdown-menu open" id="dropdown-menu-soluciones">
-                            <ul>
-                                <li><a href="/pages/soluciones/autos.html">Autos</a></li>
-                                <li><a href="/pages/soluciones/hogar.html">Hogar</a></li>
-                                <li><a href="/pages/soluciones/vida.html">Vida</a></li>
-                                <li><a href="/pages/soluciones/empresas.html">Empresas</a></li>
-                                <li><a href="/pages/soluciones/mascotas.html">Mascotas</a></li>
-                            </ul>
-                        </div>
-                    </a>
+                <li>
+                    <a id="navbar-links-soluciones" href="/pages/soluciones/soluciones.html">Soluciones</a>
+                    <ul>
+                        <li><a href="/pages/soluciones/autos.html">Autos</a></li>
+                        <li><a href="/pages/soluciones/hogar.html">Hogar</a></li>
+                        <li><a href="/pages/soluciones/vida.html">Vida</a></li>
+                        <li><a href="/pages/soluciones/empresas.html">Empresas</a></li>
+                        <li><a href="/pages/soluciones/mascotas.html">Mascotas</a></li>
+                    </ul>
                 </li>
-                <li><a>
-                        <p id="navbar-links-servicios">Servicios</p>
-                        <div class="dropdown-menu open" id="dropdown-menu-servicios">
-                            <ul>
-                                <li><a href="/pages/servicios/vita-retorno.html">Retorno</a></li>
-                            </ul>
-                        </div>
-                    </a></li>
-                <li><a>
-                        <p id="navbar-links-recursos">Recursos</p>
-                        <div class="dropdown-menu open" id="dropdown-menu-recursos">
-                            <ul>
-                                <li><a href="/pages/servicios/recursos/calculadora.html">Calculadora</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=rMDQVIe6zds&list=PLQeUl9-rQ3JGWjzXapeMPomR8llHCoexm&ab_channel=CentralInsurance">Guía</a></li>
-                            </ul>
-                        </div>
-                    </a></li>
+                <li>
+                    <a id="navbar-links-servicios" href="">Servicios</a>
+                    <ul>
+                        <li><a href="/pages/servicios/vita-retorno.html">Retorno</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="navbar-links-recursos" href="">Recursos</a>
+                    <ul>
+                        <li><a href="/pages/servicios/recursos/calculadora.html">Calculadora</a></li>
+                        <li><a
+                                href="https://www.youtube.com/watch?v=rMDQVIe6zds&list=PLQeUl9-rQ3JGWjzXapeMPomR8llHCoexm&ab_channel=CentralInsurance">Guía</a>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="mailto:info@vitainsurance.com.ni">Contacto</a></li>
             </ul>
-            <div class="logo"><a href="/index.html">INSURANCE</a></div>
-            <li><a href="Micuenta">Mi Cuenta</a></li>
-            <a href="ConsultaPlanes" class="action-btn">Consulta Planes :)</a>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
+            <div class="navbar-center">
+                <div class="logo">
+                    <a><img id="hero-title-header-autor-img" src="/images/insurance-website-favicon-color.png"
+                            alt="CEO de Vita Insurance "></a>
+                    <a href="/index.html">INSURANCE</a>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <li><a id="mi_cuenta" href="Micuenta">Mi Cuenta</a></li>
+                <a href="ConsultaPlanes" class="action-btn">Consulta Planes :)</a>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <!--Aqui iran todas las demas secciones-->
+        <!--Sección principal-->
+        <section>
+            <div class="hero-top"></div>
+        </section>
+        <!--Seccion de precios sobre las distintas soluciones-->
+        <section>
+            <h2 class="soluciones-topTitle">Precios increíbles. Suscripción mensual.<br>Descuentos por paquete</h2>
+            <div class="soluciones">
+                <div class="soluciones-cards">
+                    <div class="soluciones-cards-images"><img
+                            src="/images/pages-assets/soluciones-asstes/car-solution.svg" alt="Seguro de Carros"></div>
+                    <div class="soluciones-cards-title">Autos</div>
+                    <div>
+                        <div class="soluciones-cards-content">Protega a su coche, a los pasajeros y el planeta</div>
+                    </div>
+                    <div class="soluciones-cards-button">
+                        <a href="ConsultaPlanes" class="action-btn">Consulta nuestros precios</a>
+                    </div>
+                    <div id="soluciones-cards-prices">Desde $30/mo</div>
+                </div>
+                <div class="soluciones-cards">
+                    <div class="soluciones-cards-images"><img
+                            src="/images/pages-assets/soluciones-asstes/home-solution.svg" alt="Seguro de Hogar"></div>
+                    <div class="soluciones-cards-title">Hogar</div>
+                    <div>
+                        <div class="soluciones-cards-content">Protega su casa y sus <br> pertenencias</div>
+                    </div>
+                    <div class="soluciones-cards-button">
+                        <a href="ConsultaPlanes" class="action-btn">Consulta nuestros precios</a>
+                    </div>
+                    <div id="soluciones-cards-prices">Desde $25/mo</div>
+                </div>
+                <div class="soluciones-cards">
+                    <div class="soluciones-cards-images"><img
+                            src="/images/pages-assets/soluciones-asstes/company-solution.svg"
+                            alt="Seguro para Empresas"></div>
+                    <div class="soluciones-cards-title">Empresas</div>
+                    <div>
+                        <div class="soluciones-cards-content">Cobertura total o parcial <br> para su empresa</div>
+                    </div>
+                    <div class="soluciones-cards-button">
+                        <a href="ConsultaPlanes" class="action-btn">Consulta nuestros precios</a>
+                    </div>
+                    <div id="soluciones-cards-prices">Desde $115/mo</div>
+                </div>
+                <div class="soluciones-cards">
+                    <div class="soluciones-cards-images"><img
+                            src="/images/pages-assets/soluciones-asstes/pets-solution.svg" alt="Seguro para mascotas">
+                    </div>
+                    <div class="soluciones-cards-title">Mascotas</div>
+                    <div>
+                        <div class="soluciones-cards-content">Seguro médico para los miembros peludos de la familia
+                        </div>
+                    </div>
+                    <div class="soluciones-cards-button">
+                        <a href="ConsultaPlanes" class="action-btn">Consulta nuestros precios</b>
+                    </div>
+                    <div id="soluciones-cards-prices">Desde $15/mo</div>
+                </div>
+                <div class="soluciones-cards">
+                    <div class="soluciones-cards-images"><img
+                            src="/images/pages-assets/soluciones-asstes/life-solution.svg" alt="Seguro de vida"></div>
+                    <div class="soluciones-cards-title">Vida</div>
+                    <div>
+                        <div class="soluciones-cards-content">Protege a las personas que amas</div>
+                    </div>
+                    <div class="soluciones-cards-button">
+                        <a href="ConsultaPlanes" class="action-btn">Consulta nuestros precios</a>
+                    </div>
+                    <div id="soluciones-cards-prices">From $20/mo</div>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion Todo al instante -->
+        <section>
+            <div class="instante">
+                <h2 class="instante-topTitle">Todo al instante</h2>
+                <div class="instante-topContent">
+                    <p class="instante-topContent-p">Maya, nuestro encantador robot de inteligencia articial, elaborará
+                        el
+                        seguro perfecto para usted. <br> No podría ser más fácil, ni más rápido</p>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Footer -->
         <footer>
@@ -102,10 +192,18 @@
                     <div class="footer-col">
                         <h4>Contacto</h4>
                         <div class="social-links">
-                            <a href=""><i class="fa-solid fa-phone fa-xl"></i> +505 8724-3443</a>
-                            <a href=""><i class="fa-solid fa-envelope fa-xl"></i> info@vitainsurance.com.ni</a>
-                            <a href=""><i class="fa-solid fa-location-dot fa-xl"></i> Barrio San José, la
-                                gasolinera,<br>1 cuadra al sur, Jinotepe, Carazo,<br>Nicaragua.</a>
+                            <div id="social-links-contacts">
+                                <i class="fa-solid fa-phone fa-xl"></i>
+                                <a href="#">+505 8724-3443</a>
+                            </div>
+                            <div id="social-links-contacts">
+                                <i class="fa-solid fa-envelope fa-xl"></i>
+                                <a href="mailto:info@vitainsurance.com.ni">info@vitainsurance.com.ni</a>
+                            </div>
+                            <div id="social-links-contacts">
+                                <i class="fa-solid fa-location-dot fa-xl"></i>
+                                <a href="">Barrio San José, la gasolinera,<br> 1 cuadra al sur, Jinotepe,<br>Carazo, Nicaragua.</a>
+                            </div>
                         </div>
                     </div>
                 </div>

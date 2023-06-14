@@ -46,6 +46,7 @@ header {
     padding: 0 0.5rem;
     list-style: none;
     padding-right: 0.5rem;
+    z-index: 999;
 }
 
 .links {
@@ -167,53 +168,13 @@ header {
 
 
 /* HERO */
-#hero-top {
-    background-image: url(/images/pages-assets/soluciones-asstes/guy-kawasaki-MYPdia3U5nA-unsplash.jpg);
+.hero-top {
+    background-image: url(/images/pages-assets/alll-example.png);
     background-size: cover;
     height: 780px;
+    width: 100%;
     left: 0px;
     top: 0px;
-}
-
-.hero-title {
-    height: calc(100vh - 60vh);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #001F3F;
-    background: rgba(0, 0, 0, 0.002);
-    backdrop-filter: blur(144px);
-    border-radius: 15px;
-    width: 650px;
-    height: 170px;
-    position: relative;
-    left: 30px;
-    top: 290px;
-}
-
-#hero-title-top {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#hero-title-title {
-    position: absolute;
-    left: 50px;
-    top: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 125px;
-    line-height: 150px;
-    /* or 78%*/
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.06em;
-    color: #FFFFFF;
 }
 
 /* CATÁLOGO */
@@ -338,12 +299,12 @@ header {
 /* TODO AL INSTANTE */
 .instante {
     width: 100%;
-    height: auto;
-    background: #F7F7F7;
+    height: 600px;
+    background: url(/images/pages-assets/phone-cover.jpg);
     flex-direction: column;
     -moz-box-align: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 60px;
 
     box-sizing: border-box;
 }
@@ -359,8 +320,8 @@ header {
 }
 
 .instante-topContent {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     box-sizing: border-box;
     margin-top: 10px;
@@ -376,6 +337,7 @@ header {
 
     box-sizing: border-box;
 }
+/*
 
 .instante-menu {
     position: relative;
@@ -386,6 +348,7 @@ header {
 
     box-sizing: border-box; 
 }
+
 .instante-menu img{
     width: 100%;
 }
@@ -418,6 +381,7 @@ header {
 
     box-sizing: border-box;
 }
+*/
 
 
 
@@ -540,12 +504,20 @@ header {
 .social-links {
     display: flex;
     flex-direction: column;
+    padding-left: 25px;
 }
 
 .social-links a {
     margin-bottom: 10px;
     font-size: 14px;
     margin-left: 10px;
+}
+#social-links-contacts{
+    padding-bottom: 10px;
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 .footer-container-map-items{
     border-top-left-radius: 15px;
