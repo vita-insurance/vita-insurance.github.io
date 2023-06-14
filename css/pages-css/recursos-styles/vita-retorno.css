@@ -299,8 +299,8 @@ header {
 /* TODO AL INSTANTE */
 .instante {
     width: 100%;
-    height: 600px;
-    background: url(/images/pages-assets/phone-cover.jpg);
+    height: auto;
+    background-color: #FFFFFF;
     flex-direction: column;
     -moz-box-align: center;
     align-items: center;
@@ -337,7 +337,11 @@ header {
 
     box-sizing: border-box;
 }
-
+.instante-img{
+    margin-top: 5rem;
+    width: 433px;
+    height: 503px;
+}
 
 
 
