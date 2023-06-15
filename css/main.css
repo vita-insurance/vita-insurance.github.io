@@ -168,7 +168,7 @@ header {
 
 /* HERO */
 #hero-top{
-    background-image: url(/images/partners/office-80314.gif);
+    background: url(/images/partners/office-80314.gif);
     background-size: cover;
 
     width: unset;
