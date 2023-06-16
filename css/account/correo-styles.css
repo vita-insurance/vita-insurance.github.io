@@ -19,32 +19,6 @@ body{
     background-position: center;
 }
 
-.inputBox{
-    /*position: relative;*/
-    width: 250px;
-}
-
-.inputBox input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgba(#001F3F, 0.25);
-    background: #F7F7F7;
-    border-radius: 5px;
-    outline: none;
-    color: #FFFFFF;
-    font-size: 1em;
-}
-
-.inputBox span{
-    /*position:absolute;*/
-    left: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: #001F3F;
-    text-transform: uppercase;
-}
-
 
 li {
     list-style: none;
