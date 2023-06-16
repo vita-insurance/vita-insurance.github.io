@@ -420,6 +420,7 @@ header {
 
     box-sizing: border-box;
     justify-content: center;
+    display: flex;
 }
 
 .unirse-topTitle {
@@ -461,6 +462,35 @@ header {
     margin: auto;
     display: block;
 }
+
+#unirse-button {
+    display: flex;
+    justify-content: left;
+    margin-left: 17%;
+}
+
+.action-unirse-btn {
+    background-color: #FF7262;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action-unirse-btn:hover {
+    scale: 1.05;
+    color: #FFFFFF;
+}
+
+.action-unirse-btn:active {
+    scale: 0.95;
+}
+
 
 
 /* AFILIADOS */

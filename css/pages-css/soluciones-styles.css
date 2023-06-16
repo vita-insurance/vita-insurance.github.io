@@ -297,7 +297,7 @@ header {
 
 
 /* TODO AL INSTANTE */
-.instante {
+.instantes {
     width: 100%;
     height: 600px;
     background: url(/images/pages-assets/phone-cover.jpg);
@@ -307,6 +307,48 @@ header {
     padding-top: 60px;
 
     box-sizing: border-box;
+}
+
+.instantes-topTitle {
+    white-space: pre;
+    font-family: 'Poppins', sans-serif;
+    color: #001F3F;
+    text-align: center;
+    padding: 0px 1rem;
+    font-size: 4.4rem;
+    box-sizing: border-box;
+}
+
+.instantes-topContent {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: #001F3F;
+}
+
+.instantes-topContent-p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 28px;
+
+    box-sizing: border-box;
+}
+
+.instante {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    padding-top: 60px;
+
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .instante-topTitle {
@@ -324,7 +366,7 @@ header {
     padding-right: 40px;
 
     box-sizing: border-box;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #001F3F;
 }
 
@@ -336,53 +378,19 @@ header {
     line-height: 28px;
 
     box-sizing: border-box;
+    margin-bottom: 40px;
 }
-/*
-
-.instante-menu {
-    position: relative;
-    width: 500px;
-    top: 115px;
-    right: -420px;
-    left: auto;
-
-    box-sizing: border-box; 
-}
-
-.instante-menu img{
+.instante-img{
     width: 100%;
+    height: auto;
+    
 }
-
-.instante-menu .instante-menu-derecha {
-    top: -380px;
-    left: 380px;
-    right: auto;
-    font-size: 1.5rem;
-    color: #001F3F;
-    padding-right: 0px;
-  
-    position: relative;
-    text-align: center;
-    white-space: pre;
-
-    box-sizing: border-box;
+.instante-img img{
+    width: 434px;
+    height: 402px;
+    margin: auto;
+    display: block;
 }
-.instante-menu .instante-menu-izquierda{
-    top: -385px;
-    right: 380px;
-    left: auto;
-    font-size: 1.5rem;
-    color: #001F3F;
-    padding: 0px;
-
-    position: relative;
-    text-align: center;
-    white-space: pre;
-
-    box-sizing: border-box;
-}
-*/
-
 
 
 
