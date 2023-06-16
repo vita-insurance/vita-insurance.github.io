@@ -169,12 +169,54 @@ header {
 
 /* HERO */
 .hero-top {
-    background-image: url(/images/pages-assets/soluciones-asstes/hogar-title.jpg);
+    background-image: url(/images/pages-assets/home-test-dimension.png);
     background-size: cover;
-    height: 780px;
+    height: 600px;
     width: 100%;
     left: 0px;
     top: 0px;
+}
+
+/* TODO AL INSTANTE */
+.estrellas {
+    width: 100%;
+    height: 600px;
+    background: url(/images/pages-assets/soluciones-asstes/stars.png);
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    padding-top: 60px;
+
+    box-sizing: border-box;
+}
+
+.estrellas-topTitle {
+    white-space: pre;
+    font-family: 'Poppins', sans-serif;
+    color: #001F3F;
+    text-align: center;
+    padding: 0px 1rem;
+    font-size: 4.4rem;
+    box-sizing: border-box;
+}
+
+.estrellas-topContent {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: #001F3F;
+}
+
+.estrellas-topContent-p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 28px;
+
+    box-sizing: border-box;
 }
 
 /* CATÁLOGO */

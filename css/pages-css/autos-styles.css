@@ -322,7 +322,7 @@ header {
 }
 
 .informacion-container {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     -moz-box-align: center;
     align-items: center;
@@ -390,8 +390,7 @@ header {
 }
 
 .informacion-card {
-    pointer-events: none;
-    transition: all 250ms ease-out 0s;
+    transition: scale 0.2 ease;
     box-shadow: rgba(0, 0, 0, 0.03) 0px 18px 50px -3px;
     padding: 32px;
 
@@ -402,7 +401,7 @@ header {
 
     border: 1px solid rgb(236, 236, 236);
 
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
 
     width: 360px;
@@ -411,6 +410,11 @@ header {
     box-sizing: border-box;
 
     color: #001F3F;
+}
+.informacion-card:hover{
+    scale: 1.05;
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 18px 50px -3px;
 }
 
 .card-content {
@@ -434,7 +438,7 @@ header {
 
     background: transparent;
     width: 100%;
-    display: flex;
+    /*display: flex;*/
     -moz-box-align: center;
     align-items: center;
     border: 0px none;
@@ -536,6 +540,24 @@ header {
 
     pointer-events: auto;
 }
+
+.prefooter{
+    width: 100%;
+    height: auto;
+}
+.prefooter img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
 
 
 
