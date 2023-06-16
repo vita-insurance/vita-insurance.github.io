@@ -308,31 +308,3 @@ header {
 .action-footer-btn:active {
     scale: 0.95;
 }
-
-/*.footer-container-map img{
-    background-size: contain;
-    height: 280px;
-    width: 100%;
-}*/
-.social-links {
-    display: flex;
-    flex-direction: column;
-    padding-left: 25px;
-}
-
-.social-links a {
-    margin-bottom: 10px;
-    font-size: 14px;
-    margin-left: 10px;
-}
-#social-links-contacts{
-    padding-bottom: 10px;
-    justify-content: left;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-.footer-container-map-items{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}

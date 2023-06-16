@@ -750,7 +750,7 @@ header {
 .social-links {
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
+    padding-left: 0px;
 }
 
 .social-links a {
@@ -763,7 +763,6 @@ header {
     justify-content: left;
     text-align: left;
     display: flex;
-    flex-direction: column;
 }
 .footer-container-map-items{
     border-top-left-radius: 15px;
