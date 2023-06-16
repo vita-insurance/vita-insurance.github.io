@@ -169,17 +169,107 @@ header {
 
 /* HERO */
 .hero-top {
-    background-image: url(/images/pages-assets/soluciones-asstes/empresas-title.jpg);
+    background-image: url(/images/pages-assets/empresa-test.png);
     background-size: cover;
-    height: 780px;
+    height: 600px;
     width: 100%;
     left: 0px;
     top: 0px;
 }
 
+/* PREMIADO POR SEGUNDO AÑO CONSECUTIVO */
+.estrellas {
+    width: 100%;
+    height: 600px;
+    background: url(/images/pages-assets/soluciones-asstes/stars.png);
+    background-size: cover;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    padding-top: 60px;
+
+    box-sizing: border-box;
+}
+
+.estrellas-topTitle {
+    white-space: pre;
+    font-family: 'Poppins', sans-serif;
+    color: #001F3F;
+    text-align: center;
+    padding: 0px 1rem;
+    font-size: 4.4rem;
+    box-sizing: border-box;
+
+    padding-bottom: 40px;
+}
+
+.estrellas-topContent {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: #001F3F;
+}
+
+.estrellas-topContent-p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 28px;
+
+    box-sizing: border-box;
+}
+
+/* ACEPTADO POR LAS MEJORES FINANCIERAS */
+.financieras {
+    width: 100%;
+    height: 999px;
+    background: url(/images/pages-assets/soluciones-asstes/financieras.png);
+    background-size: cover;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    padding-top: 80px;
+
+    box-sizing: border-box;
+}
+
+.financieras-topTitle {
+    white-space: pre;
+    font-family: 'Poppins', sans-serif;
+    color: #001F3F;
+    text-align: center;
+    padding: 0px 1rem;
+    font-size: 4.4rem;
+    box-sizing: border-box;
+
+    padding-bottom: 20px;
+}
+
+.financieras-topContent {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: #001F3F;
+}
+
+.financieras-topContent-p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 28px;
+
+    box-sizing: border-box;
+}
+
 /* CATÁLOGO */
 .soluciones-topTitle {
-    background: #FFFFFF;
+    background: #F7F7F7;
     text-align: center;
     padding: 10px 1rem;
     font-family: 'Poppins', sans-serif;
@@ -192,7 +282,7 @@ header {
 .soluciones {
     width: 100%;
     height: 900px;
-    background: #FFFFFF;
+    background: #F7F7F7;
     display: flex;
     -moz-box-pack: center;
     justify-content: center;
@@ -222,13 +312,20 @@ header {
 
 .soluciones .soluciones-cards-images {
     box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.soluciones .soluciones-cards-images img {
+    width: 200px;
+    height: 70px;
 }
 
 .soluciones .soluciones-cards-title {
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    line-height: 1.3;
+    line-height: 1;
     color: #001F3F;
     white-space: pre;
     text-align: center;
@@ -241,7 +338,6 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.3;
     color: #001F3F;
     width: 100%;
     white-space: pre-wrap;
@@ -296,46 +392,243 @@ header {
 
 
 
-/* TODO AL INSTANTE */
-.instante {
-    width: 100%;
-    height: 600px;
-    background: url(/images/pages-assets/phone-cover.jpg);
+/* Informacion */
+.informacion {
     flex-direction: column;
     -moz-box-align: center;
     align-items: center;
-    padding-top: 60px;
+    background-color: #FFFFFF;
+    contain: paint;
+
+    display: flex;
+
+    padding-bottom: 100px;
 
     box-sizing: border-box;
+    position: relative;
+    width: 100%;
+
+    text-align: center;
 }
 
-.instante-topTitle {
-    white-space: pre;
-    font-family: 'Poppins', sans-serif;
-    color: #001F3F;
+.informacion-container {
+    /*display: flex;*/
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+
+    width: 1140px;
+
+    box-sizing: border-box;
+    z-index: 1;
+
     text-align: center;
-    padding: 0px 1rem;
+    color: #001F3F;
+}
+
+.informacion-title {
     font-size: 4.4rem;
-    box-sizing: border-box;
-}
 
-.instante-topContent {
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 30px;
+
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    font-weight: bold;
+    line-height: 1.25;
 
     box-sizing: border-box;
-    margin-top: 10px;
+
+    text-align: center;
     color: #001F3F;
 }
 
-.instante-topContent-p {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+.informacion-subtitle {
     font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 28px;
+    line-height: 1.55;
+
+    margin-top: 15px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+
+    text-align: center;
+    color: #001F3F;
+}
+
+.informacion-subtitle-text {
+    box-sizing: border-box;
+    text-align: center;
+    color: #001F3F;
+}
+
+.informacion-slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    transition: 250ms ease-out 0s;
+    pointer-events: none;
+
+    place-content: space-between;
+    -moz-box-pack: justify;
+
+    margin-top: 75px;
 
     box-sizing: border-box;
+
+    text-align: center;
+    color: #001F3F;
+}
+
+.informacion-card {
+    transition: scale 0.2 ease;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 18px 50px -3px;
+    padding: 32px;
+
+    text-align: left;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    outline: none;
+
+    border: 1px solid rgb(236, 236, 236);
+
+    /*display: flex;*/
+    flex-direction: column;
+
+    width: 360px;
+    height: 334px;
+
+    box-sizing: border-box;
+
+    color: #001F3F;
+}
+.informacion-card:hover{
+    scale: 1.05;
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 18px 50px -3px;
+}
+
+.card-content {
+    align-items: flex-start;
+    cursor: pointer;
+
+    flex: 1 1 0%;
+    -moz-box-align: center;
+    position: relative;
+
+    box-sizing: border-box;
+
+    pointer-events: auto;
+
+    text-align: left;
+}
+
+.card-button {
+    height: auto;
+    padding: 0px;
+
+    background: transparent;
+    width: 100%;
+    /*display: flex;*/
+    -moz-box-align: center;
+    align-items: center;
+    border: 0px none;
+    outline: 0px;
+    position: relative;
+    cursor: pointer;
+
+    flex-direction: row;
+
+    box-sizing: border-box;
+
+    pointer-events: auto;
+
+    text-align: left;
+    color: #001F3F;
+}
+
+.card-button-content {
+    -moz-box-flex: 1;
+    flex-grow: 1;
+    text-align: initial;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    pointer-events: auto;
+    color: #001F3F;
+}
+
+.card-button-content-title {
+    color: #001F3F;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    text-align: initial;
+
+    cursor: pointer;
+
+    pointer-events: auto;
+
+    margin-bottom: 2.2rem;
+
+    word-break: break-word;
+    color: #001F3F;
+
+    font-size: 2.4rem;
+    line-height: 1.13;
+
+    margin-right: 0px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    box-sizing: border-box;
+
+    pointer-events: auto;
+}
+
+.card-button-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #001F3F;
+    word-break: break-word;
+
+    box-sizing: border-box;
+
+    text-align: initial;
+
+    cursor: pointer;
+
+    pointer-events: auto;
+}
+
+.subtitle {
+    box-sizing: border-box;
+    color: #001F3F;
+    word-break: break-word;
+
+    text-align: initial;
+
+    cursor: pointer;
+
+    pointer-events: auto;
+    /**/
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #001F3F;
+    word-break: break-word;
+
+    box-sizing: border-box;
+
+    text-align: initial;
+
+    cursor: pointer;
+
+    pointer-events: auto;
 }
 
 
