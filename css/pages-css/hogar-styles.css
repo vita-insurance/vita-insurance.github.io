@@ -333,8 +333,11 @@ header {
 
     box-sizing: border-box;
     margin-top: 6px;
+    padding-bottom: 10px;
 }
-
+#solucionesExcepcion{
+    padding-bottom: 61.5px;
+}
 .soluciones .soluciones-cards-content {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -347,11 +350,12 @@ header {
 
     box-sizing: border-box;
     padding-top: 6px;
+    padding-bottom: 90px;
 }
 
 .soluciones .soluciones-cards-button {
-    margin-top: 25px;
-    margin-bottom: 15px;
+    
+    bottom: 15px;
     text-align: center;
     outline: none;
     cursor: pointer;
@@ -389,7 +393,6 @@ header {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
-
 
 
 
