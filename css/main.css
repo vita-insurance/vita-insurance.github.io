@@ -33,8 +33,8 @@ header {
     position: fixed;
     padding: 0;
     width: 100%;
+    z-index: 999;
 }
-
 .navbar {
     background-color: #FFFFFF;
     width: 100%;
@@ -46,7 +46,6 @@ header {
     padding: 0 0.5rem;
     list-style: none;
     padding-right: 0.5rem;
-    z-index: 999;
 }
 
 .links {
