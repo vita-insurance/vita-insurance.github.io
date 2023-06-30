@@ -169,13 +169,52 @@ header {
 
 
 /* HERO */
-.hero-top {
-    background-image: url(/images/pages-assets/alll-example.png);
+#hero-top{
+    background: url(/images/pages-assets/soluciones-banner.png);
     background-size: cover;
-    height: 780px;
+
     width: 100%;
+    height: 780px;
     left: 0px;
     top: 0px;
+}
+.hero-title {
+    height: calc(100vh - 60vh);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #001F3F;
+    background: rgba(0, 0, 0, 0.002);
+    backdrop-filter: blur(144px);
+    border-radius: 15px;
+    width: 700px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+    top: 240px;
+}
+#hero-title-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#hero-title-title{
+    position: absolute;
+    left: 80px;
+    top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 125px;
+    line-height: 150px;
+    /* or 78%*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
 }
 
 /* CATÁLOGO */
@@ -188,6 +227,7 @@ header {
     font-weight: 700;
     line-height: 3.6rem;
     color: #001F3F;
+    padding-bottom: 40px;
 }
 
 .soluciones {

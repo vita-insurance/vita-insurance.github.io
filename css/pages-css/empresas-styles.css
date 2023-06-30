@@ -169,13 +169,53 @@ header {
 
 
 /* HERO */
-.hero-top {
-    background-image: url(/images/pages-assets/empresa-test.png);
+#hero-top{
+    background: url(/images/pages-assets/empresas-banner.jpg);
     background-size: cover;
-    height: 600px;
+
     width: 100%;
+    height: 680px;
     left: 0px;
     top: 0px;
+}
+.hero-title {
+    height: calc(100vh - 60vh);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #001F3F;
+    background: rgba(245, 245, 245, 0.432);
+    backdrop-filter: blur(144px);
+    border-radius: 15px;
+    width: 700px;
+    height: 150px;
+    position: relative;
+    left: 290px;
+    top: 240px;
+}
+#hero-title-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#hero-title-title{
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    /* or 78%*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.06em;
+    color: #001F3F;
 }
 
 /* PREMIADO POR SEGUNDO AÑO CONSECUTIVO */
@@ -274,10 +314,12 @@ header {
     text-align: center;
     padding: 10px 1rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 3.6rem;
     color: #001F3F;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .soluciones {
