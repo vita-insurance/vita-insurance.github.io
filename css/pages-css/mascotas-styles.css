@@ -169,32 +169,73 @@ header {
 
 
 /* HERO */
-.hero-top {
-    background-image: url(https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+#hero-top{
+    background: url(https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
     background-size: cover;
-    height: 780px;
+
     width: 100%;
+    height: 680px;
     left: 0px;
     top: 0px;
+}
+.hero-title {
+    height: calc(100vh - 60vh);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #001F3F;
+    background: rgba(245, 245, 245, 0.432);
+    backdrop-filter: blur(144px);
+    border-radius: 15px;
+    width: 700px;
+    height: 150px;
+    position: relative;
+    left: 290px;
+    top: 340px;
+}
+#hero-title-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#hero-title-title{
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    /* or 78%*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.06em;
+    color: #001F3F;
 }
 
 /* CATÁLOGO */
 .soluciones-topTitle {
-    background: #FFFFFF;
+    background: #F7F7F7;
     text-align: center;
     padding: 10px 1rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 3.6rem;
     color: #001F3F;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .soluciones {
     width: 100%;
     height: 900px;
-    background: #FFFFFF;
+    background: #F7F7F7;
     display: flex;
     -moz-box-pack: center;
     justify-content: center;
@@ -203,7 +244,7 @@ header {
 
 .soluciones .soluciones-cards {
     display: flex;
-    width: 256px;
+    width: 356px;
     height: auto;
 
     flex-flow: column nowrap;
@@ -224,26 +265,33 @@ header {
 
 .soluciones .soluciones-cards-images {
     box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.soluciones .soluciones-cards-images img {
+    width: 200px;
+    height: 70px;
 }
 
 .soluciones .soluciones-cards-title {
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    line-height: 1.3;
+    line-height: 1;
     color: #001F3F;
     white-space: pre;
     text-align: center;
 
     box-sizing: border-box;
     margin-top: 6px;
+    padding-bottom: 30px;
 }
 
 .soluciones .soluciones-cards-content {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.3;
     color: #001F3F;
     width: 100%;
     white-space: pre-wrap;
@@ -255,25 +303,46 @@ header {
 }
 
 .soluciones .soluciones-cards-button {
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
     margin-top: 25px;
-    margin-bottom: 15px;
+    background-color: #001F3F;
+    border-radius: 15px;
+}
+
+.soluciones .soluciones-cards-button a {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0px;
+    font: inherit;
+    font-weight: 700;
     text-align: center;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
+    position: relative;
     text-decoration: none;
+    white-space: nowrap;
+    transform-origin: center center;
+    padding: 15px;
+    font-size: 14px;
     border-radius: 5px;
+    color: rgb(255, 255, 255);
     background-color: #FF7262;
     border: 1px solid transparent;
     transition: all 0.3s ease 0s, transform 0.5s ease 0s;
     box-shadow: rgba(255, 0, 131, 0.5) 0px 10px 40px -10px;
-}
-
-.soluciones .soluciones-cards-button a {
-    font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: 700;
+    pointer-events: auto;
+    display: block;
+    width: 194px;
 }
 
 .soluciones .soluciones-cards-button:hover {

@@ -467,11 +467,13 @@ header {
 
     display: flex;
 
-    padding-bottom: 100px;
+    margin-top: 50px;
+    padding-bottom: 20px;
 
     box-sizing: border-box;
     position: relative;
     width: 100%;
+    height: auto;
 
     text-align: center;
 }
@@ -499,7 +501,7 @@ header {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     font-weight: bold;
-    line-height: 1.25;
+    line-height: 1rem;
 
     box-sizing: border-box;
 
@@ -509,14 +511,14 @@ header {
 
 .informacion-subtitle {
     font-size: 1.8rem;
-    line-height: 1.55;
+    line-height: 3rem;
 
-    margin-top: 15px;
+    margin-top: 40px;
 
     font-family: 'Poppins', sans-serif;
     font-weight: 400px;
 
-    text-align: center;
+    text-align: justify;
     color: #001F3F;
 }
 
@@ -533,10 +535,9 @@ header {
     transition: 250ms ease-out 0s;
     pointer-events: none;
 
-    place-content: space-between;
     -moz-box-pack: justify;
 
-    margin-top: 75px;
+    margin-top: 50px;
 
     box-sizing: border-box;
 
@@ -554,13 +555,13 @@ header {
     background: rgb(255, 255, 255);
     outline: none;
 
-    border: 1px solid rgb(236, 236, 236);
+    border: 2px solid rgb(236, 236, 236);
 
     /*display: flex;*/
     flex-direction: column;
 
     width: 360px;
-    height: 334px;
+    height: auto;
 
     box-sizing: border-box;
 
@@ -576,13 +577,12 @@ header {
     align-items: flex-start;
     cursor: pointer;
 
+
     flex: 1 1 0%;
     -moz-box-align: center;
     position: relative;
 
     box-sizing: border-box;
-
-    pointer-events: auto;
 
     text-align: left;
 }
@@ -599,13 +599,10 @@ header {
     border: 0px none;
     outline: 0px;
     position: relative;
-    cursor: pointer;
 
     flex-direction: row;
 
     box-sizing: border-box;
-
-    pointer-events: auto;
 
     text-align: left;
     color: #001F3F;
@@ -689,7 +686,7 @@ header {
 
     box-sizing: border-box;
 
-    text-align: initial;
+    text-align: justify;
 
     cursor: pointer;
 

@@ -482,7 +482,6 @@ header {
     transition: 250ms ease-out 0s;
     pointer-events: none;
 
-    place-content: space-between;
     -moz-box-pack: justify;
 
     margin-top: 75px;
