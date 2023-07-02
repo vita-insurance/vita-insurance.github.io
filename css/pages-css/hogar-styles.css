@@ -314,11 +314,12 @@ header {
     text-align: center;
     padding: 10px 1rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 3.6rem;
     color: #001F3F;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .soluciones {
@@ -333,7 +334,7 @@ header {
 
 .soluciones .soluciones-cards {
     display: flex;
-    width: 256px;
+    width: 356px;
     height: auto;
 
     flex-flow: column nowrap;
@@ -374,11 +375,9 @@ header {
 
     box-sizing: border-box;
     margin-top: 6px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
-#solucionesExcepcion{
-    padding-bottom: 61.5px;
-}
+
 .soluciones .soluciones-cards-content {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -391,29 +390,49 @@ header {
 
     box-sizing: border-box;
     padding-top: 6px;
-    padding-bottom: 90px;
 }
 
 .soluciones .soluciones-cards-button {
-    
-    bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    margin-top: 25px;
+    background-color: #001F3F;
+    border-radius: 15px;
+}
+
+.soluciones .soluciones-cards-button a {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0px;
+    font: inherit;
+    font-weight: 700;
     text-align: center;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
+    position: relative;
     text-decoration: none;
+    white-space: nowrap;
+    transform-origin: center center;
+    padding: 15px;
+    font-size: 14px;
     border-radius: 5px;
+    color: rgb(255, 255, 255);
     background-color: #FF7262;
     border: 1px solid transparent;
     transition: all 0.3s ease 0s, transform 0.5s ease 0s;
     box-shadow: rgba(255, 0, 131, 0.5) 0px 10px 40px -10px;
-}
-
-.soluciones .soluciones-cards-button a {
-    font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: 700;
+    pointer-events: auto;
+    display: block;
+    width: 194px;
 }
 
 .soluciones .soluciones-cards-button:hover {
@@ -447,11 +466,13 @@ header {
 
     display: flex;
 
-    padding-bottom: 100px;
+    margin-top: 50px;
+    padding-bottom: 20px;
 
     box-sizing: border-box;
     position: relative;
     width: 100%;
+    height: auto;
 
     text-align: center;
 }
@@ -479,7 +500,7 @@ header {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     font-weight: bold;
-    line-height: 1.25;
+    line-height: 1rem;
 
     box-sizing: border-box;
 
@@ -489,14 +510,14 @@ header {
 
 .informacion-subtitle {
     font-size: 1.8rem;
-    line-height: 1.55;
+    line-height: 3rem;
 
-    margin-top: 15px;
+    margin-top: 40px;
 
     font-family: 'Poppins', sans-serif;
     font-weight: 400px;
 
-    text-align: center;
+    text-align: justify;
     color: #001F3F;
 }
 
@@ -513,10 +534,9 @@ header {
     transition: 250ms ease-out 0s;
     pointer-events: none;
 
-    place-content: space-between;
     -moz-box-pack: justify;
 
-    margin-top: 75px;
+    margin-top: 50px;
 
     box-sizing: border-box;
 
@@ -534,13 +554,13 @@ header {
     background: rgb(255, 255, 255);
     outline: none;
 
-    border: 1px solid rgb(236, 236, 236);
+    border: 2px solid rgb(236, 236, 236);
 
     /*display: flex;*/
     flex-direction: column;
 
     width: 360px;
-    height: 334px;
+    height: auto;
 
     box-sizing: border-box;
 
@@ -556,13 +576,12 @@ header {
     align-items: flex-start;
     cursor: pointer;
 
+
     flex: 1 1 0%;
     -moz-box-align: center;
     position: relative;
 
     box-sizing: border-box;
-
-    pointer-events: auto;
 
     text-align: left;
 }
@@ -579,13 +598,10 @@ header {
     border: 0px none;
     outline: 0px;
     position: relative;
-    cursor: pointer;
 
     flex-direction: row;
 
     box-sizing: border-box;
-
-    pointer-events: auto;
 
     text-align: left;
     color: #001F3F;
@@ -669,7 +685,7 @@ header {
 
     box-sizing: border-box;
 
-    text-align: initial;
+    text-align: justify;
 
     cursor: pointer;
 

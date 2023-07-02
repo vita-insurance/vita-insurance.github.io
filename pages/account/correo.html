@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/pages-css/soluciones-styles.css">
-    <title>Inicie seaion</title>
+    <link rel="stylesheet" href="/css/account/correo-styles.css">
+    <title>Inicie sesion</title>
 </head>
 
 <body>
@@ -36,8 +36,8 @@
                     <a id="navbar-links-recursos" href="">Recursos</a>
                     <ul>
                         <li><a href="/pages/servicios/recursos/calculadora.html">Calculadora</a></li>
-                        <li><a
-                                target="_blank" href="https://www.youtube.com/watch?v=rMDQVIe6zds&list=PLQeUl9-rQ3JGWjzXapeMPomR8llHCoexm&ab_channel=CentralInsurance">Guía</a>
+                        <li><a target="_blank"
+                                href="https://www.youtube.com/watch?v=rMDQVIe6zds&list=PLQeUl9-rQ3JGWjzXapeMPomR8llHCoexm&ab_channel=CentralInsurance">Guía</a>
                         </li>
                     </ul>
                 </li>
@@ -52,7 +52,7 @@
             </div>
             <div class="navbar-right">
                 <li><a id="mi_cuenta" href="/pages/account/correo.html">Mi Cuenta</a></li>
-                <a href="/pages/soluciones/soluciones.html" class="action-btn">Consulta Planes :)</a>
+                <a href="/pages/soluciones/soluciones.html" class="action-btn">Consulta Planes</a>
                 <div class="toggle-btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -61,30 +61,37 @@
     </header>
 
     <main>
-        <!-- Seccion Todo al instante -->
-        <section>
-            <div class="instantes">
-                <h2 class="instantes-topTitle">Todo al instante</h2>
-                <div class="instantes-topContent">
-                    <p class="instantes-topContent-p">Maya, nuestro encantador robot de inteligencia articial, elaborará
-                        el
-                        seguro perfecto para usted. <br> No podría ser más fácil, ni más rápido</p>
+        <!-- Chat seccion 1 -->
+        <div id="seccion1" class="seccion">
+            <div class="chat-container">
+                <form class="questions-container">
+                    <div class="select-question-inner">
+                        <h3 class="question-elements">
+                            <p>Hola! Soy Maya.</p>
+                            <p>¿Ya tienes una cuenta en Vita Insurance?</p>
+                        </h3>
+                        <div class="form">
+                            <div class="input-container ic1">
+                                <input id="firstname" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Correo Electronico</label>
+                            </div>
+                            <button type="text" class="submit" onclick="avanzar()">Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <div id="seccion2" class="seccion" style="display: none;">
+                <div class="asd">
+                    Hola
+                    <img src="/images/escena1-mirror - 180deg.jpg" alt="">
                 </div>
             </div>
-        </section>
-        <!-- ULTIMA SECCION -->
-        <section>
-            <div class="instante">
-                <h2 class="instante-topTitle">¿Cómo Vita Insurance funciona?</h2>
-                <div class="instante-topContent">
-                    <p class="instante-topContent-p">Vita invierte el modelo tradicional de seguros. Tratamos las primas que pagas como si fuera tu dinero, no el nuestro. Con Vita, todo es sencillo y trasnparente. Cobramos una tarifa plana, pagamos los siniestros super rápido y devolvemos lo que sobra a las causas que te importan.</p>
-                </div>
-                <div class="instante-img" alt="Vita Retorno seguro">
-                    <img src="/images/pages-assets/soluciones-asstes/ultima.png" alt="¿Cómo funciona vita insurance?">
-                </div>
-            </div>
-        </section>
+
     </main>
+
+    <script src="/js/scriptCorreo.js"></script>
 </body>
 
 </html>
