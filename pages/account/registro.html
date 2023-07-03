@@ -9,6 +9,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/account/correo-styles.css">
+    <link rel="stylesheet" href="/css/account/correo-styles.scss">
     <title>Inicie sesion</title>
 </head>
 
@@ -82,21 +83,41 @@
                                 <label for="firstname" class="placeholder">Apellido</label>
                             </div>
                             <div class="input-container ic1">
-                                <input id="email" class="input" type="text" placeholder=" " />
+                                <input id="phone" class="input" type="number" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Teléfono</label>
+                            </div>
+                            <div class="input-container ic1">
+                                <input id="cédula" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Cédula (ID)</label>
+                            </div>
+                            <div class="input-container ic1">
+                                <div class="male">
+                                    <input id="r1" type="radio" name="radio" value="1">
+                                    <label for="r1">ㅤMaculino</label>
+                                </div>
+                                <div class="female">
+                                    <input id="r1" type="radio" name="radio" value="1" checked>
+                                    <label for="r1">ㅤFemenino</label>
+                                </div>
+                            </div>
+                            <div class="input-container ic1">
+                                <input id="email" class="input" type="email" placeholder=" " />
                                 <div class="cut"></div>
                                 <label for="firstname" class="placeholder">Correo Electronico</label>
                             </div>
                             <div class="input-container ic1">
-                                <input id="password" class="input" type="text" placeholder=" " />
+                                <input id="password" class="input" type="password" placeholder=" " />
                                 <div class="cut"></div>
                                 <label for="firstname" class="placeholder">Contraseña</label>
                             </div>
                             <div class="input-container ic1">
-                                <input id="confirmPassword" class="input" type="text" placeholder=" " />
+                                <input id="confirmPassword" class="input" type="password" placeholder=" " />
                                 <div class="cut"></div>
                                 <label for="firstname" class="placeholder">Confirma contraseña</label>
                             </div>
-                            <button type="text" class="submit">Registrarse</button>
+                            <button type="text" class="submit"><a href="/pages/soluciones/mascotas-forms/mascota1.html">Registrarse</a></button>
                         </div>
                     </div>
                 </form>

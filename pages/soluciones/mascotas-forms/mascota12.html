@@ -9,6 +9,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/account/correo-styles.css">
+    <link rel="stylesheet" href="/css/pages-css/mascotas-forms/mascota12.scss">
     <title>Inicie sesion</title>
 </head>
 
@@ -52,7 +53,7 @@
             </div>
             <div class="navbar-right">
                 <li><a id="mi_cuenta" href="/pages/account/login.html">Mi Cuenta</a></li>
-                <a href="/pages/soluciones/soluciones.html" class="action-btn">Consulta Planes</a>
+                <a href="/pages/soluciones/mascotas-forms/mascota-payment.html" class="action-btn">Paga $34.78</a>
                 <div class="toggle-btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -67,29 +68,38 @@
                 <form class="questions-container">
                     <div class="select-question-inner">
                         <h3 class="question-elements">
-                            <p>Hola! Soy Maya.</p>
-                            <p>¿Ya tienes una cuenta en Vita Insurance?</p>
+                            <p>Seguro de salud de Yako</p>
+                            <p>perros que viva contigo?</p>
                         </h3>
+                        <a class="recuperar_contraseña"
+                            style="padding-top: 2px; margin-bottom: 5px; font-size: 24px;">Un chico demasiado lindo.
+                            Cocker Spaniel de Managua</a>
                         <div class="form">
                             <div class="input-container ic1">
-                                <input id="firstname" class="input" type="text" placeholder=" " />
-                                <div class="cut"></div>
-                                <label for="firstname" class="placeholder">Correo electronico</label>
+                                <div class="male">
+                                    <input id="r1" type="radio" name="radio" value="1" checked>
+                                    <label for="r1">ㅤMensual ($34.78)</label>
+                                </div>
+                                <div class="female">
+                                    <input id="r1" type="radio" name="radio" value="1">
+                                    <label for="r1">ㅤㅤAnual ($32.27)</label>
+                                </div>
                             </div>
-                            <div class="input-container ic1">
-                                <input id="firstname" class="input" type="password" placeholder=" " />
-                                <div class="cut"></div>
-                                <label for="password" class="placeholder">Contraseña</label>
+                            <div class="imagen">
+                                <img src="/images/pages-assets/account/menusal-prices.jpg" alt="Precio Mensual" style="width: 192px; height: 192px;">
                             </div>
-                            <a class="recuperar_contraseña" href="/pages/account/registro.html" style="padding-top: 2px; margin-bottom: 5px; font-size: 14px;">No recuerdo mi contraseña</a>
-                            <button type="text" class="submit""><a href="/pages/admin.html">Iniciar Sesión</a></button>
-                            <a class="registrarse" href="/pages/account/registro.html">No tengo una cuenta, <br>!Quiero crear una!</a>
+                            <a class="recuperar_contraseña"
+                            style="padding-top: 2px; margin-bottom: 5px; font-size: 24px;">Guarda cuando te sientas más cómodo</a>
+                            <button type="text" class="submit"><a
+                                    href="/pages/soluciones/mascotas-forms/mascota-payment.html">Paga $34.78</a></button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </main>
+
+    <script src="/js/scriptCorreo.js"></script>
 </body>
 
 </html>

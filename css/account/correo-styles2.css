@@ -250,6 +250,7 @@ header {
 
 .ic1 {
     margin-top: 40px;
+    text-align: left;
 }
 
 .input {
@@ -311,7 +312,7 @@ header {
     color: #001F3F;
 }
 
-.submit {
+.submit a{
     background-color: #FF7262;
     border-radius: 12px;
     border: 0;
@@ -327,6 +328,6 @@ header {
     margin-bottom: 20px;
 }
 
-.submit:active {
+.submit a:active {
     background-color: #fd4b37;
 }
