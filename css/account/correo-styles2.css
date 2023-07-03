@@ -330,22 +330,3 @@ header {
 .submit:active {
     background-color: #fd4b37;
 }
-.submit a{
-    background-color: #FF7262;
-    border-radius: 12px;
-    border: 0;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 18px;
-    height: 50px;
-    margin-top: 38px;
-    outline: 0;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.submit a:active {
-    background-color: #fd4b37;
-}
