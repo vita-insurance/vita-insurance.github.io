@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/account/correo-styles.css">
+    <link rel="stylesheet" href="/css/account/correo-styles.scss">
+    <title>Inicie sesion</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="links">
+                <li>
+                    <a id="navbar-links-soluciones" href="/pages/soluciones/soluciones.html">Soluciones</a>
+                    <ul>
+                        <li><a href="/pages/soluciones/autos.html">Autos</a></li>
+                        <li><a href="/pages/soluciones/hogar.html">Hogar</a></li>
+                        <li><a href="/pages/soluciones/vida.html">Vida</a></li>
+                        <li><a href="/pages/soluciones/empresas.html">Empresas</a></li>
+                        <li><a href="/pages/soluciones/mascotas.html">Mascotas</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="navbar-links-servicios" href="">Servicios</a>
+                    <ul>
+                        <li><a href="/pages/servicios/vita-retorno.html">Retorno</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="navbar-links-recursos" href="">Recursos</a>
+                    <ul>
+                        <li><a href="/pages/servicios/recursos/calculadora.html">Calculadora</a></li>
+                        <li><a target="_blank"
+                                href="https://www.youtube.com/watch?v=rMDQVIe6zds&list=PLQeUl9-rQ3JGWjzXapeMPomR8llHCoexm&ab_channel=CentralInsurance">Guía</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="mailto:info@vitainsurance.com.ni">Contacto</a></li>
+            </ul>
+            <div class="navbar-center">
+                <div class="logo">
+                    <a><img id="hero-title-header-autor-img" src="/images/insurance-website-favicon-color.png"
+                            alt="CEO de Vita Insurance "></a>
+                    <a href="/index.html">INSURANCE</a>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <li><a id="mi_cuenta" href="/pages/account/login.html">Mi Cuenta</a></li>
+                <a href="/pages/soluciones/soluciones.html" class="action-btn">Consulta Planes</a>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Chat seccion 1 -->
+        <div id="seccion1">
+            <div class="chat-container">
+                <form class="questions-container">
+                    <div class="select-question-inner">
+                        <h3 class="question-elements">
+                            <p>Vamos a agregar un nuevo seguro</p>
+                        </h3>
+                        <div class="form">
+                            <div class="input-container ic1">
+                                <select name="socios"  class="input" id="socio-select">
+                                    <option value="vida">Vita Vida</option>
+                                    <option value="hogar">Vita Hogar</option>
+                                    <option value="auto" selected="">Vita Auto</option>
+                                    <option value="empresa">Vita Empresa</option>
+                                    <option value="mascotas">Vita Mascotas</option>
+                                </select>
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Categoría de seguro</label>
+                            </div>
+                            <div class="input-container ic1">
+                                <input id="name" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Nombre del seguro</label>
+                            </div>
+                            <div class="input-container ic1">
+                                <input id="description" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Descripción</label>
+                            </div>
+                            <div class="input-container ic1">
+                                <select name="socios"  class="input" id="socio-select">
+                                    <option value="Seguros Lafise">Seguros Lafise</option>
+                                    <option value="Seguros América">Seguros América</option>
+                                    <option value="INISER" selected="">INISER</option>
+                                    <option value="Allianz">Allianz</option>
+                                </select>
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Socio</label>
+                            </div>
+                            <div class="input-container ic1">
+                                <input id="price" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Precio ($)</label>
+                            </div>
+                            <button type="text" class="submit"><a href="/pages/admin2.html">Continuar</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/scriptCorreo.js"></script>
+</body>
+
+</html>

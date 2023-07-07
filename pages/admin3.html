@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vista Administrador</title>
+
+    <!-- Montserrat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pages-css/admin2-styless.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined"></span> Vita Insurance
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="admin.html">
+                        <span class="material-icons-outlined">dashboard</span> Tablero
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admin2.html">
+                        <span class="material-icons-outlined">inventory_2</span> Seguros
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">fact_check</span> Categorías
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admin4.html">
+                        <span class="material-icons-outlined">add_shopping_cart</span> Órdenes de pólizas
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">shopping_cart</span> Venta de pólizas
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">poll</span> Reportes
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">settings</span> Ajustes
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+
+            <div class="main-cards button-card">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Vita Hogar</p>
+                        <span class="material-icons-outlined text-blue">home</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">134</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Vita Auto</p>
+                        <span class="material-icons-outlined text-orange">drive_eta</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">83</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Vita Mascotas</p>
+                        <span class="material-icons-outlined text-green">pets</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">79</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Vita Empresa</p>
+                        <span class="material-icons-outlined text-red">apartment</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">56</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Vita Vida</p>
+                        <span class="material-icons-outlined text-primary">monitor_heart</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">54</span>
+                </div>
+
+                <a href="/pages/agregar-poliza.html" style="text-decoration: none;">
+                    <div class="card" id="especial">
+                        <div class="card-inner">
+                            <p style="color: #367952; font-weight: 600;" class="text-primary">Agregar Póliza</p>                        
+                            <span class="material-icons-outlined text-green">health_and_safety</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </main>
+        <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/admin2.js"></script>
+</body>
+
+</html>

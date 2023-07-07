@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vista Administrador</title>
+
+    <!-- Montserrat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pages-css/admin2-styless.css">
+    <link rel="stylesheet" href="/css/pages-css/admin4.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined"></span> Vita Insurance
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="admin.html">
+                        <span class="material-icons-outlined">dashboard</span> Tablero
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">inventory_2</span> Seguros
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">fact_check</span> Categorías
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">add_shopping_cart</span> Órdenes de pólizas
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">shopping_cart</span> Venta de pólizas
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">poll</span> Reportes
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">settings</span> Ajustes
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+
+            <div class="panel">
+                <div class="banner-admin-ingreso">
+                    <h1>Órdenes de pólizas</h1>
+
+                    <p class="descripcion">
+                        Observa las pólizas activas, en proceso de aceptación, en revisión, y en cancelación
+                    </p>
+                </div>
+
+                <div class="panel-contenido-opciones">
+                    <a href="#" class="opcion" id="todos">Todos <span class="contador">10</span></a>
+                    <a href="#" class="opcion">Último Mes <span class="contador">5</span></a>
+                    <a href="#" class="opcion">Último corte trimenstral<span class="contador">3</span></a>
+                    <a href="#" class="opcion">Anual<span class="contador">7</span></a>
+                </div>
+
+                <div class="panel-contenido-tabla">
+                    <h2>
+                        Resultados de los ingresos con filtro:
+                        <span id="filtro">Todos</span>
+                    </h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Tipo</th>
+                                <th>Usuario</th>
+                                <th>Precio</th>
+                                <th>Estado</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Auto</td>
+                                <td>Contra robo</td>
+                                <td>Jorge Valdez</td>
+                                <td>$98.00</td>
+                                <td>ACTIVO</td>
+                                <td>2022-03-29</td>
+                            </tr>
+                            <tr>
+                                <td>Hogar</td>
+                                <td>Caida de árboles</td>
+                                <td>Teresa Ruíz</td>
+                                <td>$66.45</td>
+                                <td>Queja</td>
+                                <td>2023-07-07</td>
+                            </tr>
+                            <tr>
+                                <td>Empresa</td>
+                                <td>Global Shield</td>
+                                <td>Dinamis</td>
+                                <td>$105.77</td>
+                                <td>CANCELANDO</td>
+                                <td>2021-02-01</td>
+                            </tr>
+                            <tr>
+                                <td>Mascota</td>
+                                <td>Global</td>
+                                <td>Gabriela Bee</td>
+                                <td>$34.87</td>
+                                <td>ACTIVO</td>
+                                <td>2023-05-19</td>
+                            </tr>
+                            <tr>
+                                <td>Empresa</td>
+                                <td>Global Shield</td>
+                                <td>Dinamis</td>
+                                <td>$105.77</td>
+                                <td>Activo</td>
+                                <td>2023-02-01</td>
+                            </tr>
+                            <tr>
+                                <td>Auto</td>
+                                <td>Responsabilidad Civil</td>
+                                <td>Jorge Valdez</td>
+                                <td>$23.50</td>
+                                <td>ACTIVO</td>
+                                <td>2022-03-29</td>
+                            </tr>
+                            <!-- Agrega más filas según tus datos -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/admin2.js"></script>
+</body>
+
+</html>
