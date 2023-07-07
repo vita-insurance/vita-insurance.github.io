@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vista Administrador</title>
+
+    <!-- Montserrat Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pages-css/admin2-styless.css">
+    <link rel="stylesheet" href="/css/pages-css/admin4.css">
+    <link rel="stylesheet" href="/css/pages-css/admin6.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <a href="/pages/account/login.html"><span class="material-icons-outlined">account_circle</span></a>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined"></span> Vita Insurance
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="admin.html">
+                        <span class="material-icons-outlined">dashboard</span> Tablero
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admin2.html">
+                        <span class="material-icons-outlined">inventory_2</span> Seguros
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">fact_check</span> Categorías
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admin4.html">
+                        <span class="material-icons-outlined">add_shopping_cart</span> Órdenes de pólizas
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="admin5.html">
+                        <span class="material-icons-outlined">poll</span> Quejas
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">settings</span> Ajustes
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <video id="videoElement" autoplay></video>
+                    <div class="botones-camara">
+                        <button id="captureBtn">Capturar</button>
+                        <button id="cancelBtn">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- #region INFORMACIÓN PERSONAL-->
+                <div class="personal">
+                    <div class="div-foto">
+                        <div id="result" class="foto result-container">
+                            <img id="capturedImage" src="/images/users/user4.jpg" alt="foto" />
+                        </div>
+                        <div class="botones">
+                            <button id="selectImageButton">Subir</button>
+                            <button id="openModalBtn">Capturar</button>
+                        </div>
+                    </div>
+
+                    <div class="formulario">
+                        <form action="">
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Nombre</label>
+                                    <input type="text" name="" value="Administrador" id="nombre" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Apellidos</label>
+                                    <input type="text" name="" id="nombre" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Correo</label>
+                                    <input type="text" name="" value="Admin" id="nombre" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Cambiar Contraseña</label>
+                                    <input type="password" value="123" name="" id="nombre" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Confirmar Contraseña</label>
+                                    <input type="password" name="" id="nombre" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Fecha de nacimiento</label>
+                                    <input type="date" name="" id="fecha-nacimiento" value="2002-01-11" required />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Género</label>
+                                    <select name="" id="genero" required>
+                                        <option value="" disabled selected>Sexo</option>
+                                        <option value="">Femenino</option>
+                                        <option value="" selected>Masculino</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="campos">
+                                    <label for="">Teléfono</label>
+                                    <div class="telefono">
+                                        <select id="pais-select" required>
+                                            <option value="" disabled>Código</option>
+                                            <option value="+501">(+501)</option>
+                                            <option value="+502">(+502)</option>
+                                            <option value="+503">(+503)</option>
+                                            <option value="+504">(+504)</option>
+                                            <option value="+505" selected>(+505)</option>
+                                            <option value="+506">(+506)</option>
+                                            <option value="+507">(+507)</option>
+                                        </select>
+                                        <input type="tel" name="telefono" id="telefono" placeholder="0000 - 0000"</>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button>Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- #endregion INFORMACÍÓN PERSONAL-->
+
+            </div>
+        </main>
+        <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/acceso-camara.js"></script>
+</body>
+
+</html>

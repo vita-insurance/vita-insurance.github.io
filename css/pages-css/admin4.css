@@ -1,14 +1,19 @@
 #ingresos {
     background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-admin-ingreso {
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
     background: #FFFFFF;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     padding: 3%;
@@ -90,9 +95,10 @@
     border-collapse: collapse;
     margin-top: 10px;
 
-    font-family: 'Open Sans';
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     border-radius: 15px;
+    color: #001F3F;
 }
 
 .panel-contenido-tabla th,

@@ -1,0 +1,353 @@
+.banner {
+    background: linear-gradient(0deg, rgba(1, 44, 95, 0.70) 0%, rgba(1, 44, 95, 0.70) 100%), url(/img/banner-gestion-cuenta.jpg), lightgray 2.138px -569.599px / 100% 288.094% no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+
+    width: 100%;
+    height: 30%;
+    max-height: 200px;
+    padding: 4% 0;
+    padding-left: 40px;
+    padding-right: 300px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8%;
+}
+
+.banner h1 {
+    color: #FFF;
+
+    /* T1-Open Sans */
+    font-size: 3.5em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.banner p {
+    color: #FFF;
+    text-align: justify;
+    /* P3-Montserrat */
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container {
+    width: 100%;
+    padding: 2% 4%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.personal,
+.credenciales,
+.pago {
+    width: 95%;
+    margin: 1%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+}
+
+h2 {
+    color: var(--blue-secundario, #01387B);
+    border-bottom: 4px solid #FF7262;
+    width: 95%;
+    margin: 1%;
+    /* T3- Sans */
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.div-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    border: #012C5F solid 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    /*background-image: url(/img/user.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+button {
+    border: none;
+    width: fit-content;
+    padding: 1% 2%;
+    border-radius: 15px;
+    background: #001F3F;
+
+    color: #FFFFFF;
+    
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+button:hover {
+    background: #001F3F;
+}
+
+.botones button {
+    padding: 2% 7%;
+}
+
+
+.form-group {
+    display: inline-block;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.campos {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.campos .telefono {
+    display: flex;
+    gap: 3%
+}
+
+.campos .telefono select,
+.campos .telefono input,
+#fecha-nacimiento,
+#genero {
+    width: fit-content;
+}
+
+.formulario label,
+.formulario select {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #013878;
+}
+
+
+.formulario input,
+.formulario select {
+    width: 370px;
+    height: 42px;
+    padding: 0px 8px;
+
+    font-size: 16px;
+
+    background: #EFEFEF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+
+h3 {
+    color: var(--blue-secundario, #01387B);
+    /* T4-Open Sans */
+    font-size: 27.34px;
+    margin-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.forma-actual {
+    width: 100%;
+}
+
+.tarjeta-actual {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 8%;
+}
+
+.tarjeta-actual p {
+    color: #001F3F;
+    text-align: center;
+
+    /* T4-Open Sans */
+    font-size: 27.34px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tarjeta-actual button {
+    background: rgba(1, 44, 95, 0.12);
+}
+
+.forma-actual small {
+    color: #656869;
+    text-align: center;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#requerido {
+    color: red;
+    padding-left: 1%;
+}
+
+.campo-tarjeta-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+}
+
+#fecha input,
+#csv input {
+    width: fit-content;
+}
+
+.acepto label {
+    color: #001F3F;
+    text-align: justify;
+    font-size: 12.8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    width: 40%;
+}
+
+.acepto input {
+    width: fit-content;
+}
+
+.acepto button {
+    width: 40%;
+}
+
+
+.acepto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    margin: 4% auto;
+    padding: 2%;
+    border: 1px solid #001F3F;
+    border-radius: 15px;
+    width: 450px;
+    height: 480px;
+}
+
+.botones-camara {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.botones-camara button {
+    border: 1px;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: #001F3F;
+    color: #FFFFFF;
+
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    height: 80%;
+}
+
+#videoElement {
+    width: 100%;
+    height: 90%;
+    border-radius: 2%;
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#capturedImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+}
+
+#cancelBtn {
+    background-color: #FF7262;
+}
